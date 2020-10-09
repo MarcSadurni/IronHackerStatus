@@ -1,8 +1,8 @@
+<div class="readme">
 <h1>Welcome to IronHacker Status ! </h1>
 
-<img class="readme-pic" src="https://giphy.com/gifs/LZElUsjl1Bu6c/html5">
-
-
+![Alt Text](https://media.giphy.com/media/LZElUsjl1Bu6c/giphy.gif)
+</div>
 Want to know your feelings today? With Ironhacker Status you can check it by answering few questions ! After that you will recieve a lovely Gif as a result. 
 At the end dont forget to open the fortune cookie!
 
