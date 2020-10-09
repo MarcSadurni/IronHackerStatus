@@ -1,8 +1,8 @@
-.readme{
-    display:block;
-    margin:auto;
-}
 
-.readme-text{
-    font-weight: bold;
+.readme {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    
 }
