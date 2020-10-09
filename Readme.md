@@ -1,14 +1,10 @@
 
-<link rel="stylesheet" href="./css/readme.css">
-
-<h1 class="readme">Welcome to IronHacker Status ! </h1>
+<h1>Welcome to IronHacker Status ! </h1>
 
 ![Alt Text](https://media.giphy.com/media/LZElUsjl1Bu6c/giphy.gif)
 
-<p class ="readme-text">Want to know your feelings today? With Ironhacker Status you can check it by answering few questions ! After that you will recieve a lovely Gif as a result. 
+<p>Want to know your feelings today? With Ironhacker Status you can check it by answering few questions ! After that you will recieve a lovely Gif as a result. 
 At the end dont forget to open the fortune cookie!</p>
-
-</div>
 
 <h2>Minimum viable product</h2>
 

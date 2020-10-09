@@ -4,11 +4,10 @@
 // const getQuotes = () => {
 //     return fetch ('https://type.fit/api/quotes')  // obtengo la lista de las quotes
 //     .then((response) => response.json()) //parse JSON
-//     .then((texts) =>texts.[0])  // obtener el primer texto
+//     .then((texts) =>texts.[Math.floor(Math.random()*texts.length)]) // obtener un texto aleatorio
 //     .then((texto) =>console.log(texto.text))
 //     };
-//     getQuotes();
-    
+//     getQuotes()
     
 // API PARA GIFS
 
