@@ -1,6 +1,6 @@
 <h1>Welcome to IronHacker Status ! </h1>
 
-<iframe class="readme-pic" src="https://giphy.com/embed/LZElUsjl1Bu6c" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hello-LZElUsjl1Bu6c">via GIPHY</a></p>
+<img class="readme-pic" src="https://giphy.com/embed/LZElUsjl1Bu6c">
 
 Want to know your feelings today? With Ironhacker Status you can check it by answering few questions ! After that you will recieve a lovely Gif as a result. 
 At the end dont forget to open the fortune cookie!
