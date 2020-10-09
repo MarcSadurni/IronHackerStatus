@@ -1,5 +1,7 @@
-<div class="readme">
-<h1>Welcome to IronHacker Status ! </h1>
+
+<link rel="stylesheet" href="./css/readme.css">
+
+<h1 class="readme">Welcome to IronHacker Status ! </h1>
 
 ![Alt Text](https://media.giphy.com/media/LZElUsjl1Bu6c/giphy.gif)
 
