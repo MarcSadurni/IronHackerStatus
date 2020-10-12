@@ -7,21 +7,23 @@
   <link rel="stylesheet" href="css/login.css">
 </head>
 <header>
-    <nav>
+    <nav class="nav-bar-header">
       <ul class="nav-bar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="register.html" class="selected">Register</a></li>
+        <li class ="title-register"><a href="index.html">Home</a></li>
+        <li class ="title-register"><a href="signup.html" class="selected">Register</a></li>
       </ul>
     </nav>
   </header>
 <body>
     <section class="login">
-      <h2>Login</h2>
-      <div class="form-wrapper">
+      <div class="titulo-login">
+        <h2>Login</h2>
+      </div>
+      <div class="botones-login">
         <form class="login-form" action="">
           <input type="email" id="email" placeholder="Enter your Email" />
           <input type="password" id="password" placeholder="Enter your password" />
-          <button type="submit" class="button" id="login-button">Login</button>
+          <button type="submit" class="button" id="login-button">Enter</button>
         </form>
         <div class="message-container">
         </div>

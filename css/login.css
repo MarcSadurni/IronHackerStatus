@@ -1,2 +1,54 @@
 body{ background-image: url(../images/human.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+nav{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color:rgb(138,205,242);
+}
+
+.nav-bar-header{
+    width: 100%;
+    height: 100%;
+    
+}
+.nav-bar-header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar-header li{
+    padding : 2px 7px 2px 7px;
+    
+}
+.nav-bar-header a{
+    text-decoration: none;
+
+}
+
+.title-register{
+    font-size: 1.5em;
+}
+
+.titulo-login{
+    text-align: center;
+    font-size: 2em;
+}
+
+.botones-login{
+    display:flex;
+    justify-content: center;
+}
+
+.button{
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgb(138,205,242);
+    font-size: 2em;
 }

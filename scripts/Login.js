@@ -44,7 +44,7 @@ class Login {
     }
     else {
       // si el inicio de sesión no se ha realizado correctamente
-      message.innerHTML = 'Incorrect password';
+      message.innerHTML = 'Incorrect password or username';
     }
 
     this.messageContainer.appendChild(message);
@@ -53,7 +53,7 @@ class Login {
   }
 
   redirect = () => {
-    setTimeout( ()=> location.assign('dashboard.html'), 2000);
+    setTimeout( ()=> location.assign('index.html'), 2000);
   }
 
 }
