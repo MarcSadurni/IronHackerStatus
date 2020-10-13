@@ -1,20 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
 body{ background-image: url("https://media.giphy.com/media/xThuWjC7yute751y0g/giphy.gif");
     background-size: 100%;}
     
     
-    nav{
-        display:flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: flex-end;
-        background-color:rgb(138,205,242);
-    }
+ nav{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color:rgb(138,205,242);
+}
 
 .home{
     font-size: 1.5em;
 }
 
+/* CSS DE LA NAV BAR */
 
 .nav-bar-header{
     width: 100%;
@@ -41,16 +46,30 @@ body{ background-image: url("https://media.giphy.com/media/xThuWjC7yute751y0g/gi
     font-size: 2em;
 }
 
-.register{
-    text-align: center;
+/* --------------------------------------------------------- */
     
+.results{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
 }
-
 .cookie{
     width: 50px;
     height: 50px;
+
 }
 .text-congrats{
-    font-size: 3em;
-    padding : 25% 25% 25% 25%;
+    font-size: 25px;
+    padding : 70% 5% 70% 5%;
+    text-align: center;
+        
+      }
+
+.random-quote{
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: Uppercase;
 }
