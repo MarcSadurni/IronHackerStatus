@@ -37,5 +37,4 @@ const db = new Database();
 
 console.log('db', db)
 
-// Botón Start
 
