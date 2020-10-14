@@ -1,22 +1,32 @@
 
 // API PARA QUOTES
 
-const getQuotes = () => {
-    let randomQuotes = document.querySelector(".random-quote");
-    fetch ('https://type.fit/api/quotes')  // obtengo la lista de las quotes
-    .then((response) => response.json()) //parse JSON
-    .then((texts) =>texts[Math.floor(Math.random()*texts.length)]) // obtener un texto aleatorio
-    .then((texto) => {let finalQuote = document.createElement("p")
-    finalQuote.innerHTML = `${texto.text.toUpperCase()}`
-    randomQuotes.appendChild(finalQuote)
-})
-return texto
-    };
-    getQuotes()
+// const getQuotes = () => {
+//     let randomQuotes = document.querySelector(".random-quote");
+//     fetch ('https://type.fit/api/quotes')  // obtengo la lista de las quotes
+//     .then((response) => response.json()) //parse JSON
+//     .then((texts) =>texts[Math.floor(Math.random()*texts.length)]) // obtener un texto aleatorio
+//     .then((texto) => {let finalQuote = document.createElement("p")
+//     finalQuote.innerHTML = `${texto.text.toUpperCase()}`
+//     randomQuotes.appendChild(finalQuote)
+// })
+// return texto
+//     };
+//     getQuotes()
 
     
 // API PARA GIFS
 
+function getData(){
+    let radioButtons = document.getElementsByTagName("input");
+    let score = 0;
+    for ( var i=0; i< radioButtons.length; i++){
+    if(radioButtons[i].checked){
+    score += parseInt(radioButtons[i].value);
+    }
+}
+console.log(score);
+}
 
     let getGifs = document.querySelector(".random-gif")
     function randomGifs(mood) {
