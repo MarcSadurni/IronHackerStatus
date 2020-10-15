@@ -55,6 +55,7 @@ body{ background-image: url("https://media.giphy.com/media/xThuWjC7yute751y0g/gi
     align-items: center;
     justify-content: center;
     align-content: space-around;
+    margin-top: 10px;
 }
 .cookie{
     width: 50px;
@@ -63,9 +64,8 @@ body{ background-image: url("https://media.giphy.com/media/xThuWjC7yute751y0g/gi
 }
 .text-congrats{
     font-size: 25px;
-    padding : 70% 5% 70% 5%;
-    text-align: center;
-        
+    padding : 20% 5% 0% 5%;
+    text-align: center; 
       }
 
 .random-quote{

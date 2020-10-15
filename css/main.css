@@ -24,39 +24,29 @@ nav{
     height: 100%;
     
 }
-.nav-bar-header ul{
+.nav-bar ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
 }
 
-.nav-bar-header li{
+.nav-bar li{
     padding : 2px 7px 2px 7px;
     
 }
-.nav-bar-header a{
+.nav-bar a{
     text-decoration: none;
 
 }
 /* --------------------------------------------------------------- */
 
 /* Titulo Principal */
-h1{
-    text-align: center;
-    font-size: 35px;
-    color: white;
-    text-decoration: underline;
-    padding-top: 5%;
-}
+
+
 
 /* Texto de introducción */
 
-.text-intro{
-    font-size: 22px;
-    padding: 10% 10% 0% 10%;
-    color:white;
-    text-align: center;
-    }
+
 
 
 .title-register{
@@ -65,13 +55,7 @@ h1{
 
 /* Botón Start :  */
 
-.start-button {
-    background: #3498db;
-    width: 380px;
-    border-radius: 5px;
-    padding-top: 50%;
-    
-}
+
 .start{
     font-family: 'Roboto'; 
     text-transform: uppercase;
@@ -83,17 +67,87 @@ h1{
 
 }
 
+.titleq{
+    margin-right: auto;
+    margin-right: auto;
+}
 
-@media (min-width: 768px){
-    
+@media (max-width: 600px){
+
     h1{
-        font-size: 70px;
-        padding-top: 10%;
+        text-align: center;
+        font-size: 3em;
+        color: white;
+        text-decoration: underline;
+        padding-top: 5%;
+    }
+    
+        
+    .start-button{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background: #3498db;
+        width: 380px;
+        border-radius: 5px;
+        margin-right: auto;
+    margin-left: auto;
     }
 
+    .text-divintro{
+margin-top: 25%;
+line-height: 35px;
+    }
+    .text-intro{
+        font-size: 22px;
+        color:white;
+        text-align: center;
+        }
+    .titulo-login{
+        margin-bottom: 50px;
+        }
+}
+
+@media (min-width: 601px){
+    h1{
+        text-align: center;
+        font-size: 70px;
+        color: white;
+        text-decoration: underline;
+        padding-top: 5%;
+    }
+    .titulo-login{
+        margin-bottom: 50px;
+    }
+    
     .text-intro{
         font-size: 35px;
+        margin-top: 40px;
+        color:white;
+        text-align: center;
+        
     }
+    .start-button{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background: #3498db;
+        width: 380px;
+        border-radius: 5px;
+        margin-right: auto;
+    margin-left: auto;
     }
+    .text-divintro{
+       line-height: 35px;
+            }
+    
+}
+    
 
     

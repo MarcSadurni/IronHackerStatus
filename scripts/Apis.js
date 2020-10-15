@@ -15,14 +15,20 @@ function getData(arr) {
 
 function resultMood(score) {
     let numMood = ""
-    if (score >= 4 && score <= 7) {
+    if (score >= 0 && score <= 6) {
         numMood = 'dead';
     }
-    else if (score >= 8 && score <= 15) {
-        numMood = 'normal';
+    else if (score >= 7 && score <= 11) {
+        numMood = 'crazy';
+    }
+    else if (score >= 12 && score <= 14) {
+        numMood = 'fine';
+    }
+    else if (score >= 15 && score <= 17) {
+        numMood = 'happy';
     }
     else {
-        numMood = 'happy';
+        numMood = 'party';
     }
     return numMood
 }

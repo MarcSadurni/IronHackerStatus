@@ -3,25 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>IronHacker Status</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
   <link rel="stylesheet" href="css/login.css">
 </head>
+<body>
 <header>
-  <nav class="nav-bar-header">
-    <ul class="nav-bar">
-      <li class="title-register"><a href="index.html">Home</a></li>
-      <li class="title-register"><a href="signup.html" class="selected">Register</a></li>
+  <div class="nav-bar-header">
+  <nav class="nav-bar">
+    <ul>
+      <li class="home"><a href="index.html">Home</a></li>
+      <li class="home"><a href="signup.html" class="selected">Register</a></li>
+      <li class ="home"><a href="faq.html">FAQ</a></li>
     </ul>
   </nav>
+</div>
 </header>
-
-<body>
-  <section class="login">
-    <div class="titulo-login">
-      <h2>Login</h2>
-    </div>
-    <div class="botones-login">
-      <form class="login-form" action="">
+<main>
+  <section class="login"> 
+      <h2 class="title-login">Login</h2>
+    <div class="login" class="input-group">
+      <form action="">
         <div class="input-group">
           <input type="email" id="email" placeholder="" />
           <label>Email</label>
@@ -30,12 +32,13 @@
           <input type="password" id="password" placeholder="" />
           <label>Password</label>
         </div>
-        <button type="submit" class="button" id="login-button">Enter</button>
+        <button type="submit" class="button" id="login-button">Confirm</button>
       </form>
       <div class="message-container">
       </div>
     </div>
   </section>
+</main>
   <script src="scripts/Login.js"></script>
   <script src="scripts/Database.js"></script>
   <script src="scripts/Animations.js"></script>

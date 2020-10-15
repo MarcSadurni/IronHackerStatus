@@ -3,12 +3,34 @@
     padding:0;
 }
 
-body{ background-image: url(../images/human.jpg);
+body{ background-image: url(../images/portatil.png);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
 }
-/* ESTILO DE LA NAV BAR */
 
+.title-login{
+    text-align: center;
+    padding-top: 10%;
+    font-size: 30px;
+}
+
+.title-register{
+    text-align: center;
+    padding-top: 10%;
+    font-size: 30px;
+}
+.login{
+    text-align: center;
+    
+}
+
+
+.home{
+    font-size: 1.5em;
+}
+   
 nav{
     display:flex;
     flex-direction: column;
@@ -38,39 +60,20 @@ nav{
 
 }
 
-/* --------------------------------------------------------------------------- */
-
-
-
-.title-register{
-    font-size: 1.5em;
-}
-
-.titulo-login{
-    text-align: center;
-    font-size: 2em;
-}
-
-.botones-login{
-    display:flex;
-    justify-content: center;
-    padding-top: 40%;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
 
 .button{
+    text-align: center;
     border-radius: 6px;
     background-color: rgb(138,205,242);
     font-size: 2em;
-    justify-content: center;
-    padding-top: 30%;
+    width: 180px;
 }
+
 
 .input-group {
     margin: 25px 0;
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .input-group input {
@@ -85,7 +88,7 @@ nav{
 
 label {
     position: absolute;
-    left: 15px;
+    left: 55px;
     top: 50%;
     transform: translateY(-50%);
     color: #111;
@@ -104,28 +107,13 @@ input:not(:placeholder-shown)+label span {
     color: #fff;
 }
 
-.message-container{
-    font-size: 50px;
-    color: red;
-    background-color: rgb(138,205,242);
+.message-container {
+    width: 100%;
+    max-width: 800px;
+}
+.message-container p{
+    background-color: rgb(218, 39, 39);
+    box-shadow: 0 5px 10px 5px rgb(138,205,242);
+    font-size: 20px;
 }
 
-@media (min-width: 768px){
-    .titulo-login{
-        text-align: center;
-        font-size: 55px;
-        padding-top: 5%;
-    }
-    .button{
-        text-align: center;
-        border-radius: 6px;
-        background-color: rgb(138,205,242);
-        font-size: 50px;
-        width: 330px;
-        height: 50px;
-    
-    }
-    .title-register{
-        font-size: 50px;
-    }
-}

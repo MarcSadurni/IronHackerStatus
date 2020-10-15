@@ -5,8 +5,10 @@
 /* body{ background-image: url(https://media.giphy.com/media/iIN9FhrbOLQekZYw9l/giphy.gif); */
     body{
     Background-image: url(https://media.giphy.com/media/l0CLV6LkWccT6CwG4/giphy.gif);
-    background-size: 100%;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
    }
    .respuestas{
@@ -15,11 +17,14 @@
 }
 
    .questions {
-    border: 1px solid #7DA5E0;
-    padding: 10px;
+    padding-top: 10px;
     margin: 10px;
     font-size: 8px;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+
     
     }
 
@@ -29,35 +34,41 @@
     }
 
     .question{
-        font-size: 2em;
+        font-size: 20px;
         font-weight: bold;
+        padding-top: 10px;
     }
 /* NAV BAR */
- nav{
+nav{
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-end;
     background-color:rgb(138,205,242);
-    }
+}
 
 .nav-bar-header{
     width: 100%;
     height: 100%;
-    display: fixed;
+    
 }
-.nav-bar-header ul{
+.nav-bar ul{
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
 
-.nav-bar-header li{
+.nav-bar li{
     padding : 2px 7px 2px 7px;
     
 }
-.nav-bar-header a{
+.nav-bar a{
     text-decoration: none;
 
+}
+.title-register{
+    font-size: 1.5em;
 }
 
 .button{
@@ -78,6 +89,7 @@
 h2{
     font-size: 25px;
     text-align: center;
+    text-decoration: underline;
 }
 
 /* --------------------------------------------------------------------------- */
@@ -94,3 +106,16 @@ h2{
     font-size : 1.7em;
     text-decoration: none;
 }
+
+@media (min-width: 601px){
+
+    .questions{
+        padding-left: 40%;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+    
+}
+
