@@ -7,30 +7,38 @@
   <link rel="stylesheet" href="css/login.css">
 </head>
 <header>
-    <nav class="nav-bar-header">
-      <ul class="nav-bar">
-        <li class ="title-register"><a href="index.html">Home</a></li>
-        <li class ="title-register"><a href="signup.html" class="selected">Register</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="nav-bar-header">
+    <ul class="nav-bar">
+      <li class="title-register"><a href="index.html">Home</a></li>
+      <li class="title-register"><a href="signup.html" class="selected">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
 <body>
-    <section class="login">
-      <div class="titulo-login">
-        <h2>Login</h2>
-      </div>
-      <div class="botones-login">
-        <form class="login-form" action="">
-          <input type="email" id="email" placeholder="Enter your Email" />
-          <input type="password" id="password" placeholder="Enter your password" />
-          <button type="submit" class="button" id="login-button">Enter</button>
-        </form>
-        <div class="message-container">
+  <section class="login">
+    <div class="titulo-login">
+      <h2>Login</h2>
+    </div>
+    <div class="botones-login">
+      <form class="login-form" action="">
+        <div class="input-group">
+          <input type="email" id="email" placeholder="" />
+          <label>Email</label>
         </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="" />
+          <label>Password</label>
+        </div>
+        <button type="submit" class="button" id="login-button">Enter</button>
+      </form>
+      <div class="message-container">
       </div>
-    </section>
+    </div>
+  </section>
   <script src="scripts/Login.js"></script>
   <script src="scripts/Database.js"></script>
+  <script src="scripts/Animations.js"></script>
 </body>
 
 </html>

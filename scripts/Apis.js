@@ -34,7 +34,7 @@ function randomGifs(mood) {
             return response.json()
         })
         .then((gift) => {
-            return gift.data.embed_url
+            return gift.data.images.downsized_large.url
         })
 }
 
@@ -42,15 +42,8 @@ async function finalGif() {
     const number = await getData(radioButtons);
     const resultm = await resultMood(number);
     const finalGif = await randomGifs(resultm);
-    await localStorage.setItem('gifUrl', finalGif)
+    await localStorage.setItem('gifUrl', JSON.stringify(finalGif))
     console.log(finalGif, "finalGif")
     return finalGif
 }
 
-// window.addEventListener("load", () => {
-//     const btn = document.getElementById("gif-button");
-//       btn.addEventListener("click", async() => {
-//         await localStorage.setItem('gifUrl', "finalGif") }
-//       });
-//   }
-  

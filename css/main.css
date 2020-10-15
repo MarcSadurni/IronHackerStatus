@@ -8,30 +8,8 @@ body{
 
    }
 
-h1{
-    text-align: center;
-    font-size: 100px;
-    color: white;
-    text-decoration: underline;
-    padding-top: 5%;
-}
 
-@media (max-width: 768px){
-    h1 {
-        font-size: 35px;
-        padding: 25px 5px 0px 5px;
-    }
-    p.text-intro{
-        font-size: 22px;
-        padding-top: 8%;
-        text-align: center;
-        color: white;
-        padding-left: 5%;
-        padding-right: 5%;
-        }
-    
-}
-
+/* ESTILO DE LA NAV BAR */
 nav{
     display:flex;
     flex-direction: column;
@@ -60,41 +38,62 @@ nav{
     text-decoration: none;
 
 }
+/* --------------------------------------------------------------- */
+
+/* Titulo Principal */
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    text-decoration: underline;
+    padding-top: 5%;
+}
+
+/* Texto de introducción */
+
+.text-intro{
+    font-size: 22px;
+    padding: 10% 10% 0% 10%;
+    color:white;
+    text-align: center;
+    }
+
 
 .title-register{
     font-size: 1.5em;
 }
 
-
-.text-intro{
-font-size: 40px;
-padding-top: 3%;
-color:white;
-text-align: center;
-}
-
-
 /* Botón Start :  */
-
 
 .start-button {
     background: #3498db;
-    width: 480px;
-    padding: 4px 0;
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    transform: translateX(-50%) translateY(-50%);
+    width: 380px;
     border-radius: 5px;
-}
+    padding-top: 50%;
     
-  .start{
-        font-family: 'Roboto'; 
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFF;
-        user-select: none;
-        font-size : 1.7em;
-        text-decoration: none;
+}
+.start{
+    font-family: 'Roboto'; 
+    text-transform: uppercase;
+    color: #FFF;
+    user-select: none;
+    font-size : 1.7em;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+@media (min-width: 768px){
+    
+    h1{
+        font-size: 70px;
+        padding-top: 10%;
     }
 
+    .text-intro{
+        font-size: 35px;
+    }
+    }
+
+    
