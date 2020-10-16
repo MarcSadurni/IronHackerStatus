@@ -73,3 +73,18 @@ body{ background-image: url("https://media.giphy.com/media/xThuWjC7yute751y0g/gi
     text-align: center;
     text-transform: Uppercase;
 }
+
+@media (min-width: 600px){
+    .text-congrats{
+        font-size: 40px;
+        padding-top: 10%;
+    }
+
+    .random-quote{
+        font-size: 25px;
+    }
+    .results{
+        margin-top: 2%;
+    }
+}
+

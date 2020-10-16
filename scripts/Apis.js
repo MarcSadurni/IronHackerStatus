@@ -40,16 +40,18 @@ function randomGifs(mood) {
             return response.json()
         })
         .then((gift) => {
-            return gift.data.images.downsized_large.url
+            return gift.data.images.fixed_height.url
         })
 }
-
+const redirect = () =>{
+    setTimeout(()=>location.assign("results.html"),2000);
+}
 async function finalGif() {
     const number = await getData(radioButtons);
     const resultm = await resultMood(number);
     const finalGif = await randomGifs(resultm);
     await localStorage.setItem('gifUrl', JSON.stringify(finalGif))
     console.log(finalGif, "finalGif")
-    return finalGif
+    await redirect()
 }
 

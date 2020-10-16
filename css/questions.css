@@ -17,15 +17,12 @@
 }
 
    .questions {
-    padding-top: 10px;
+    padding: 10px 40px;
     margin: 10px;
     font-size: 8px;
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
-
-    
     }
 
     .emojis{
@@ -34,9 +31,11 @@
     }
 
     .question{
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         padding-top: 10px;
+        color: black;
+        margin-right: 1px;
     }
 /* NAV BAR */
 nav{
@@ -83,6 +82,8 @@ nav{
     
 }
 
+
+
 /* ----------------------------------------------------------------------- */
 
 /* TITULO Y CUESTIONARIO */
@@ -107,15 +108,145 @@ h2{
     text-decoration: none;
 }
 
-@media (min-width: 601px){
+
+
+/* BOTON GET RESULTS */
+
+
+button {
+    font-size: 2em;
+    background: #3498db;
+    color: #fff;
+    border: 0.25rem solid #3498db;
+    padding: 0.85em 0.75em;
+    margin: 10% 13%; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+  }
+  button:hover {
+    color: #3498db;
+  }
+  button::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+  }
+  
+  button.slide_from_left::after {
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+  }
+  button.slide_from_right::after {
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+  }
+  button.slide_from_top::after {
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+  }
+  button.slide_from_bottom::after {
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+  }
+  button[class^="grow"]::after {
+    transition: all 0.3s ease;
+  }
+  button[class^="grow"]:hover::after {
+    transition: all 0.3s ease-out;
+  }
+  button.grow_box::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0, 0);
+  }
+  button.grow_box:hover::after {
+    transform: scale(1, 1);
+  }
+  button.grow_ellipse::after {
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    line-height: 8.34em;
+    transform: scale(0, 0);
+  }
+  button.grow_ellipse:hover::after {
+    transform: scale(1, 1);
+  }
+  
+
+  @media (min-width: 750px){
 
     .questions{
-        padding-left: 40%;
+        display: flex;
+        margin: 80px;
+        flex-direction: column;
+        align-items: center;
     }
 
     h2{
         font-size: 50px;
     }
-    
+    button {
+        font-size: 2em;
+        background: #3498db;
+        color: #fff;
+        border: 0.25rem solid #3498db;
+        padding: 0.85em 0.75em;
+        margin: 20% 30%; 
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        
+      }
+      .question{
+          font-size: 28px;
+      }
+  
 }
+@media (min-width: 1100px){
 
+    .questions{
+        display: flex;
+        margin: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 70px;
+        margin-top: 20px;
+    }
+    button {
+        font-size: 2em;
+        background: #3498db;
+        color: #fff;
+        border: 0.25rem solid #3498db;
+        padding: 0.85em 0.75em;
+        margin: 3% 39%; 
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        
+      }
+      .question{
+          font-size: 48px;
+      }
+  
+}
